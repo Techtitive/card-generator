@@ -106,3 +106,10 @@ button:active {
 .download {
     display: none;
 }
+
+@media (max-width="400px"){
+body {
+height: 100%;
+width: 60%;
+margin: auto;
+}
