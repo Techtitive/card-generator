@@ -111,6 +111,7 @@ button:active {
     body {
         height: 100%;
         width: 60%;
-        margin: auto;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
