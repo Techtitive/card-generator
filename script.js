@@ -5,8 +5,11 @@ const generate = document.getElementById("generate");
 const download = document.getElementById("download");
 const heading = document.getElementById("card-title");
 const details = document.getElementById("card-greeting");
+const conatiner = document.getElementById("container")
 
 generate.addEventListener("click", () => {
+    conatiner.style.marginLeft = "36%"
+    conatiner.style.marginRight = "36%"
     const textvalue = text.value.trim().charAt(0).toUpperCase() + text.value.trim().slice(1);
     const themevalue = theme.value;
     const thememessages = {Birthday: `Wishing you a day full of joy and laughter, ${textvalue}! 🥳✨ May this year bring you happiness and success! 🌟🎁
