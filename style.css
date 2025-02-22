@@ -4,7 +4,7 @@
 
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -19,12 +19,16 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    margin: auto;
     background-color: hsl(0, 0%, 30%);
     color: white;
     padding: 20px 15px;
     border-radius: 5px;
     gap: 3px;
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10%;
 }
 
 #name, #theme {
@@ -105,4 +109,24 @@ button:active {
 
 .download {
     display: none;
+}
+
+
+@media (max-width: 1000px){
+    .container{
+        margin: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        overflow: hidden;
+        object-fit: contain;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+        object-fit: contain;
+    }
 }
