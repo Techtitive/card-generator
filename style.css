@@ -16,7 +16,7 @@ body {
     margin: auto;
 }
 
-.container {
+#container {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -26,9 +26,14 @@ body {
     border-radius: 5px;
     gap: 3px;
     margin-top: 10%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 10%;
+}
+
+.container {
+  width: 30%;
+  height: fit-content;
 }
 
 #name, #theme {
@@ -113,20 +118,46 @@ button:active {
 
 
 @media (max-width: 1000px){
-    .container{
+    #container{
         margin: 0;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 25% !important;
+        margin-right: 25% !important;
         overflow: hidden;
         object-fit: contain;
     }
+
+    .container {
+        width: auto;
+        height: fit-content;
+      }
 }
-@media (max-width: 600px){
-    .container{
+
+@media (max-width: 800px){
+    #container{
         margin: 0;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 15% !important;
+        margin-right: 15% !important;
         overflow: hidden;
         object-fit: contain;
     }
+
+    .container {
+        width: auto;
+        height: fit-content;
+      }
+}
+
+@media (max-width: 600px){
+    #container{
+        margin: 0;
+        margin-left: 5% !important;
+        margin-right: 5% !important; 
+        overflow: hidden;
+        object-fit: contain;
+    }
+
+    .container {
+        width: auto;
+        height: fit-content;
+      }
 }
